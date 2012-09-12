@@ -1,0 +1,10 @@
+<resources>
+	<!-- General -->
+    <string name="app_name">Gourmesto</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Einstellungen</string>
+    
+    <!-- Titles -->
+    <string name="title_activity_navigator">Gourmesto</string>
+
+</resources>
