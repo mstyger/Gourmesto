@@ -1,10 +1,11 @@
 <html> 
 	<head> 
-		<title>Home</title> 
+		<title>Gourmesto</title> 
 		<!-- meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		
 		<!-- links -->
 		<link rel="stylesheet" href="css/style.css" />
@@ -14,10 +15,6 @@
 		<script src="jquery.mobile-1.1.1/jquery-1.7.1.min.js"></script>
 		
 		<script>
-			function vibrate() {
-				navigator.notification.vibrate(0);
-			}
-		  //reset type=date inputs to text
 		  $(document).bind("mobileinit", function() {
 			 $.mobile.defaultPageTransition = "slide";
 			 $.mobile.allowCrossDomainPages = true;
@@ -30,13 +27,63 @@
 	</head>	
 	<body> 
 		<div data-role="page">
-			<div data-role="header" data-position="fixed">
-				 <h1>Irgend en Titel ohni Bild</h1>
+			<div data-role="header" data-position="fixed" style="text-align:center;">
+				<img src="images/icon_title.png" style='vertical-align:middle;' />
 			</div>
 			<div data-role="content">
-				<div style="display:block;text-align:right;"><img src="images/icon.png" /></div>
-				<a href="#" data-role="button" onclick="vibrate();">Vibriere!</a>
+				<ul data-role="listview" data-inset="true">
+					<li>
+						<a href="index.html">
+							<img src="images/nav/suche.png" />
+							<h3>Suche</h3>
+							<p>Suchen Sie das für Sie passende Restaurant</p>
+						</a>
+					</li>
+					<li>
+						<a href="index.html">
+							<img src="images/nav/favoriten.png" />
+							<h3>Favoriten</h3>
+							<p>Merken Sie sich Ihre Lieblingsrestaurants</p>
+						</a>
+					</li>
+					<li>
+						<a href="index.html">
+							<img src="images/nav/naehe.png" />
+							<h3>In meiner Nähe</h3>
+							<p>Finden Sie das passende Restaurant in Ihrer Nähe</p>
+						</a>
+					</li>
+					<li>
+						<a href="index.html">
+							<img src="images/nav/restaurants.png" />
+							<h3>Restaurants</h3>
+							<p>Alle Restaurants anzeigen</p>
+						</a>
+					</li>
+					<li>
+						<a href="index.html">
+							<img src="images/nav/tipp.png" />
+							<h3>Tipp der Woche</h3>
+							<p>Folgen Sie unserem Tipp der Woche!</p>
+						</a>
+					</li>
+					<li>
+						<a href="index.html">
+							<img src="images/nav/news.png" />
+							<h3>News</h3>
+							<p>Tägliche Neuigkeiten aus der gastronomischen Branche</p>
+						</a>
+					</li>
+				</ul>
 			</div>
+			<div data-role="footer" data-id="foo1" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="a.html">Impressum</a></li>
+						<li><a href="b.html">Datenschutz</a></li>
+					</ul>
+				</div><!-- /navbar -->
+			</div><!-- /footer -->
 		</div>
 	</body>
 	<!-- custom js -->
